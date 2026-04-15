@@ -77,11 +77,15 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z zsh-autosuggestions zsh-completions zsh-syntax-highlighting fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+zstyle ':completion:*' matcher-list 'm:{a-z}=A-Z' 'r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -112,3 +116,28 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+
+# my shortcuts
+#
+# nav
+alias ..="cd .."
+alias ...="cd ../.."
+alias ll="ls -la"
+
+# git
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"
+alias gl="git log --oneline --graph --decorate"
+
+# nvim 
+alias v="nvim"
+alias vi="nvim"
+
+# edit dot files
+alias zshrc="nvim ~/.zshrc"
+alias tmuxconf="nvim ~/.tmux.conf"
