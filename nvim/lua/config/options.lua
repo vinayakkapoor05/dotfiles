@@ -4,3 +4,6 @@
 --
 --
 vim.opt.relativenumber = false
+
+vim.opt.mouse = "a"
+vim.opt.mousescroll = "ver:3,hor:6"
