@@ -141,3 +141,19 @@ alias vi="nvim"
 # edit dot files
 alias zshrc="nvim ~/.zshrc"
 alias tmuxconf="nvim ~/.tmux.conf"
+
+
+# open pdfs, etc 
+alias open="open"
+alias pdf="open -a Preview"
+alias chrome="open -a 'Google Chrome'"
+
+
+
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
