@@ -7,6 +7,9 @@ brew install neovim tmux lazygit
 brew install --cask iterm2
 brew install --cask font-jetbrains-mono-nerd-font
 \sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+
 ```
 
 ### install
