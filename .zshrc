@@ -148,6 +148,8 @@ alias open="open"
 alias pdf="open -a Preview"
 alias chrome="open -a 'Google Chrome'"
 
+# clear 
+alias clr="clear"
 
 
 HISTSIZE=10000
