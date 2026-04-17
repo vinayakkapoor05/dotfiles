@@ -30,6 +30,8 @@ vim.keymap.set("n", "<leader>tt", function()
   local new_line
   if line:find("%[x%]") then
     new_line = line:gsub("%[x%]", "[ ]")
+  elseif line:find("%[%]") then
+    new_line = line:gsub("%[%]", "[x]")
   elseif line:find("%[ %]") then
     new_line = line:gsub("%[ %]", "[x]")
   end
