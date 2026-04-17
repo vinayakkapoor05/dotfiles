@@ -21,7 +21,6 @@ cp .p10k.zsh ~/.p10k.zsh
 cp tmux.conf ~/.tmux.conf
 ```
 
-
 ### zsh plugins
 
 ```bash
@@ -34,4 +33,5 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CU
 ### iTerm2
 
 import \`iterm2/kanagawa_dragon.itermcolors\` into iTerm2
+and lotus for light mode!
 font size is 15pt, also bold

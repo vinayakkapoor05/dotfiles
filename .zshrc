@@ -164,4 +164,10 @@ alias tdh="todo history"
 alias tds="todo done"
 alias tdc="todo carry"
 
+
+# dark/light mode toggle 
+alias dark="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to true'"
+alias light="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to false'"
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
