@@ -158,4 +158,10 @@ setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
 
 
+#todo 
+alias td="todo"
+alias tdh="todo history"
+alias tds="todo done"
+alias tdc="todo carry"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
