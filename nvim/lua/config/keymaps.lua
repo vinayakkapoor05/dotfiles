@@ -23,3 +23,17 @@ vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
+
+-- todo
+vim.keymap.set("n", "<leader>tt", function()
+  local line = vim.api.nvim_get_current_line()
+  local new_line
+  if line:find("%[x%]") then
+    new_line = line:gsub("%[x%]", "[ ]")
+  elseif line:find("%[ %]") then
+    new_line = line:gsub("%[ %]", "[x]")
+  end
+  if new_line then
+    vim.api.nvim_set_current_line(new_line)
+  end
+end, { desc = "Toggle checkbox" })
