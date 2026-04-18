@@ -9,6 +9,7 @@ brew install --cask font-jetbrains-mono-nerd-font
 \sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install fzf
 $(brew --prefix)/opt/fzf/install
+brew install yazi
 
 ```
 

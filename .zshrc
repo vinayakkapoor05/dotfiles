@@ -169,5 +169,8 @@ alias tdc="todo carry"
 alias dark="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to true'"
 alias light="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to false'"
 
+#yazi 
+alias y="yazi"
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
